@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>login page</title>
+        <script>
+            function validateForm() {
+              let x = document.forms["myForm"]["fname"].value;
+              if (x == "") {
+                  alert("Name must be filled out");
+                  return false;
+              }
+            }
+          </script>
+        <link rel="stylesheet" href="stylesheetlogin.css" />
+    </head>
+
+    <body>
+        <form action="" onsubmit="return validateForm()">
+        <div class="container">
+            <label for="username">Username:</label>
+            <input
+                name="username"
+                type="text"
+                placeholder="Enter Username : "
+                id="username-field"
+            />
+            <br />
+            <label for="password">Password : </label>
+            <input
+                id="password-field"
+                name="password"
+                type="password"
+                placeholder="Enter Password : "
+            />
+            <div class="btn-container">
+                <button type="submit" id="sumbitbutton">Submit</button>
+                <button type="submit" id="resetbutton">Reset</button>
+            </div>
+        </div>
+    </form>
+        <script src="script1.js"></script>
+    </body>
+</html>
